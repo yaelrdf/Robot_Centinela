@@ -6,15 +6,12 @@
 #     url = https://github.com/<org>/<repo-web>.git
 #     branch = main
 #
- [submodule "mobile"]
-     path = mobile
-     url = https://github.com/yaelrdf/Robot_Centinela-Aplicacion_Movil.git
-     branch = main
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/yaelrdf/Robot_Centinela-Aplicacion_Movil.git
+	branch = main
 #
 # [submodule "iot"]
 #     path = iot
 #     url = https://github.com/<org>/<repo-iot>.git
 #     branch = main
-
-# TODO: reemplazar los comentarios de arriba con los bloques reales
-# una vez que los repositorios web, mobile e iot estén creados en GitHub.
