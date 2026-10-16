@@ -1,0 +1,36 @@
+name: Sync submodules
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"   # cada 2 horas
+  workflow_dispatch:         # botón manual "Run workflow"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-submodules
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Update submodules to latest main
+        run: git submodule update --remote
+
+      - name: Commit and push if anything changed
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: sync submodules to latest main"
+          git push
