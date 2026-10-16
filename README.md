@@ -27,7 +27,7 @@ se integra aquí como submódulo de Git.
 
 ## Descripción general del sistema
 
-### Capa física — el rover
+### Capa física
 El robot es un chasis de orugas con tracción diferencial impulsado por dos motores con encoder.
 Embarca un ESP32 como unidad de cómputo principal y una ESP32-CAM para captura de video local.
 Sus sensores incluyen:
