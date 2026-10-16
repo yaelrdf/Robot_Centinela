@@ -1,10 +1,10 @@
 # .gitmodules
 # Submodulos
 #
-# [submodule "web"]
-#     path = web
-#     url = https://github.com/<org>/<repo-web>.git
-#     branch = main
+[submodule "web"]
+	path = web
+	url = https://github.com/maferpalomarolvera00-spec/ProyectoWeb_Centinela.git
+	branch = main
 #
 [submodule "mobile"]
 	path = mobile
