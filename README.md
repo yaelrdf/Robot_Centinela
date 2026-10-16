@@ -17,7 +17,7 @@ se integra aquí como submódulo de Git.
 |-----------|-------------|
 | `web/`    | Aplicación web — dashboard de monitoreo |
 | `mobile/` | Aplicación móvil — dashboard de monitoreo |
-| `iot/`    | Firmware y software embebido del rover (ESP32) |
+| `iot/`    | Firmware y software embebido del robot (ESP32) |
 
 > Los enlaces a cada repositorio se agregan en [`.gitmodules`](.gitmodules) una vez que estén
 > disponibles. Ver también el workflow de sincronización en
