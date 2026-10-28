@@ -12,6 +12,6 @@
 	branch = main
 
 [submodule "iot"]
-     path = iot
-     url = https://github.com/troyeta05/Centinela-IoT.git
-     branch = main
+	path = iot
+	url = https://github.com/troyeta05/Centinela-IoT.git
+	branch = main
