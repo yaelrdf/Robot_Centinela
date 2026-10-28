@@ -10,8 +10,8 @@
 	path = mobile
 	url = https://github.com/yaelrdf/Robot_Centinela-Aplicacion_Movil.git
 	branch = main
-#
-# [submodule "iot"]
-#     path = iot
-#     url = https://github.com/<org>/<repo-iot>.git
-#     branch = main
+
+[submodule "iot"]
+     path = iot
+     url = https://github.com/troyeta05/Centinela-IoT.git
+     branch = main
